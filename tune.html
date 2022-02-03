@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<Html>
+<title> TUNNE maker </title>
+<style>
+ .jk{
+  background-image:url("Nt6v.gif");
+  margin-left: 100px;
+  width: 300px;
+  height: 100px;
+  color: cyan;
+  background-size: 300px 100px;
+  font-family: Algerian;
+  font-size: 30px;
+
+ }
+ #jk{
+   color: white;
+ }
+ #dg{
+  background-image:url("fxVE.gif");
+    background-size: 1000px 1000px;
+}
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 120px ;
+    spacing: 320px;
+ }
+</style>
+<head>
+  <h3 id = "jk">bass beat </h3>
+
+<body id ="dg">
+  <div id ="kg">
+<table class="center">
+<tr>
+<td>  <button class="jk">q</button> </td>
+<td>  <button class="jk">w</button> </td></tr>
+<tr>  <td> <button class="jk">r</button> </td>
+  <td><button class="jk">c</button></td></tr>
+</table>
+<button class="jk">pause</button>
+</div>
+</body>
+</head>
+<script>
+const c = document.querySelectorAll("button");
+let h =0;
+for(let x=0;x < c.length;x++)
+
+{
+  c[x].addEventListener("click",lk);
+
+
+  }
+  let q = new Audio("global-djs-part-two-alan-w-style-5012.mp3");
+  let w = new Audio("the-hall-of-earth-15751.mp3");
+  let r = new Audio("perjalanan-2981.mp3");
+  let n = new Audio("1-mornings-lightjubalance-3-1265.mp3");
+function lk() {
+  if (this.innerHTML == "q")
+  {
+    w.pause();
+      r.pause();
+      n.pause();
+
+
+
+    q.play()
+  }
+  if (this.innerHTML == "w")
+  { q.pause();
+    r.pause();
+    n.pause();
+
+    w.play();
+
+  }
+  if (this.innerHTML == "r")
+  {
+    q.pause();
+      w.pause();
+      n.pause();
+
+    r.play();
+
+  }
+  if (this.innerHTML == "c")
+  { q.pause();
+    r.pause();
+    w.pause();
+
+    n.play();
+
+}
+if (this.innerHTML == "pause")
+{ q.pause();
+  r.pause();
+  w.pause();
+
+  n.pause();
+
+}
+
+}
+
+
+
+
+
+
+</script>
+
+</Html>
